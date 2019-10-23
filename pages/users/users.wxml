@@ -1,0 +1,26 @@
+<view class='user'>
+  <!--用户信息展示-->
+  <view class="userBox">
+    <view class="userInfo">
+      <view class="Info-head">
+        <open-data type="userAvatarUrl" default-avatar="http://oldbeans.cn/image/after.png"></open-data>
+      </view>
+      <view class="Info-detail">
+        <open-data type="userNickName" default-text="无用户信息"></open-data>
+      </view>
+    </view>
+  </view>
+  
+  <!--用户使用记录栏-->
+  <view class="userdataBar" wx:for="{{dataBar}}" wx:key="text">
+    <navigator class="dataBar" url="{{item.url}}" open-type="redirect">
+      <view class="dataBarItem">
+        <view class="dataBaritemImage">    
+          <image src="{{item.imageUrl}}"></image>
+        </view>
+        <view class="dataBaritemText">{{item.text}}</view>
+      </view>
+      <view class="divLine"></view>
+    </navigator>
+  </view>
+</view>

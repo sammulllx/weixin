@@ -1,0 +1,15 @@
+<view class= "userinfo">
+<!-- <scroll-view scroll-y="true"> -->
+  <view class="meta">
+    <image class="poster" src="https://gss0.bdstatic.com/94o3dSag_xI4khGkpoWK1HF6hhy/baike/c0%3Dbaike150%2C5%2C5%2C150%2C50/sign=48de929ab2315c60579863bdecd8a076/c83d70cf3bc79f3d50fcdabfb4a1cd11728b291b.jpg" background-size="cover"></image>
+    <text class="title">{{movie.name}}</text>
+    <text class="info">别称：{{movie.oname}}</text>
+    <text class="info">学名:{{movie.sname}}</text>
+    <text class="info">产地：{{movie.where}}</text>
+  </view>
+  <view class="summary">
+    <text class="label">简介：</text>
+    <text class="content">{{movie.summary}}</text>
+  </view>
+<!-- </scroll-view> -->
+</view>

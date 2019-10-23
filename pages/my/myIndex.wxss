@@ -1,0 +1,6 @@
+.slide-image {
+    width: 100%;
+}
+page{
+  background: rgb(238, 245, 229);
+}

@@ -1,0 +1,66 @@
+.dataBarItem {
+  display: flex;
+  flex-direction: row wrap;
+  justify-content: centor;
+  height: 40px;
+  margin-top: 7px;
+}
+.divLine {
+  background: #E0E3DA;
+  width: 100%;
+  height: 3rpx;
+}
+
+.dataBaritemImage {
+  height: 24px;
+  width: 24px;
+  margin-right: 4%;
+  margin-left: 3%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+view.dataBaritemImage image{
+  height: 80%;
+  width: 80%;
+}
+
+.dataBaritemText {
+  font-size: 18px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.userInfo {
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.userBox {
+  height: 140px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.Info-head {
+  overflow: hidden;  
+    display: block;
+  height: 70px;
+  width: 70px;
+  margin: 10px;
+
+  border-radius: 50%; 
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2); 
+  border: 2px solid #fff;  
+  
+  margin-left: 6px;
+  margin-right: 15px;
+}
+.Info-detail {
+  color: black;
+}
+page{
+  background: rgb(238, 245, 229);
+}

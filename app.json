@@ -1,0 +1,63 @@
+{
+  "pages": [
+    "pages/blank/blank",
+    "pages/index/index",
+    "pages/movie/movie",
+    
+    
+	  
+    
+    
+    "pages/base-detail/index",
+    
+    
+    "pages/logs/logs",
+    
+    "pages/my/myIndex",
+    "pages/users/users"
+    
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#8BC34A",
+    "navigationBarTitleText": "中药溯源系统",
+    "navigationBarTextStyle": "black",
+    "backgroundColor": "#EDEDED"
+  },
+  "tabBar": {
+    "selectedColor": "#000065",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "image/home_176px_1201102_easyicon.net.png",
+        "selectedIconPath": "image/home_254px_1138666_easyicon.net.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "iconPath": "image/tree_783px_1233936_easyicon.net.png",
+        "selectedIconPath": "image/tree_152px_1189846_easyicon.net.png",
+        "text": "种植基地"
+      },
+      {
+        "pagePath": "pages/users/users",
+        "iconPath": "image/user_545px_1208228_easyicon.net.png",
+        "selectedIconPath": "image/user_280px_1197046_easyicon.net.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json",
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序定位"
+    }
+  },
+  "plugins": {
+    "routePlan": {
+      "version": "1.0.2",
+      "provider": "wx50b5593e81dd937a"
+    }
+  }
+}

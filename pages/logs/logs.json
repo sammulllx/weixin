@@ -1,0 +1,9 @@
+{
+    "navigationBarTitleText": "基地大全",
+    "usingComponents": {
+      "ec-canvas": "../../ec-canvas/ec-canvas"
+    }
+  }
+    
+     
+    

@@ -1,0 +1,64 @@
+<!-- 
+<map
+id="myMap"
+style="width: 100%; height: 300px;"
+longitude="116.313972" latitude="39.980014"
+scale='16'
+subkey="AVABZ-EIPWP-7RTDK-L6UQ3-SHYET-V5B6V"
+polyline="{{polyline}}"
+markers="{{markers}}"
+></map> -->
+<!-- <button bindtap="onUnload">返回</button> -->
+
+<swiper class="home-swiper" indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="{{circular}}">
+  <block wx:for="{{imgUrls}}" >
+    <swiper-item>
+    <navigator>
+      <image src="{{item}}" class="slide-image"/>
+      </navigator>
+    </swiper-item>
+  </block>
+</swiper>
+<view class="weui-cells weui-cells_after-title">
+            <view class="weui-cell weui-cell_example back"  bindtap="gotobase">
+                <view class="weui-cell__hd">
+                    <image src="/image/location_783px_1234896_easyicon.net.png" style="margin-right: 16px;vertical-align: middle;width:20px; height: 20px;"></image>
+                </view>
+                <view class="weui-cell__bd">地址</view>
+                <view class="weui-cell__ft">清远龙潭种植区</view>
+            </view>
+            <navigator bindtap="call" class="weui-cell weui-cell_example back">
+                <view class="weui-cell__hd">
+                    <image src="/image/whatsapp_607px_1229084_easyicon.net.png" style="margin-right: 16px;vertical-align: middle;width:20px; height: 20px;"></image>
+                </view>
+                <view class="weui-cell__bd">电话</view>
+                <view class="weui-cell__ft">18476026398</view>
+            </navigator>
+        </view>
+        
+		<view class="greenbar">
+		  <text class="title">基地详情</text>
+		  <!-- <navigator>
+		   <text class="more">更多</text>
+		  </navigator> -->
+		</view>
+
+<view class="box">
+
+  <!-- <view class="box"> -->
+  <ec-canvas id="mychart-dom-line1" canvas-id="mychart-line1" ec="{{ ecline1 }}"></ec-canvas>
+  <!-- <ec-canvas id="mychart-dom-line2" canvas-id="mychart-line2" ec="{{ ecline2 }}"></ec-canvas> -->
+  <ec-canvas id="mychart-dom-line3" canvas-id="mychart-line3" ec="{{ ecline3 }}"></ec-canvas>
+  <ec-canvas id="mychart-dom-line4" canvas-id="mychart-line4" ec="{{ ecline4 }}"></ec-canvas>
+   <ec-canvas id="mychart-dom-line5" canvas-id="mychart-line5" ec="{{ ecline5 }}"></ec-canvas>
+ 
+ 
+<!-- </view> -->
+
+</view>
+
+	
+		
+		
+		

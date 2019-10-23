@@ -1,0 +1,96 @@
+  
+<swiper class="home-swiper" indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="{{circular}}">
+  <block wx:for="{{imgUrls}}" >
+    <swiper-item>
+    <navigator>
+      <image src="{{item}}" class="slide-image"/>
+      </navigator>
+    </swiper-item>
+  </block>
+</swiper>
+<view class="special-choose">
+  <view class="special-item">
+    <text class="icon star"></text>
+    <text class="title">中药图谱</text>
+  </view>
+      <view class="special-item">
+    <text class="icon new"></text>
+    <text class="title">西医综合</text>
+  </view>
+      <view class="special-item">
+    <text class="icon tejia"></text>
+    <text class="title">人体穴位</text>
+  </view>
+      <view class="special-item">
+    <text class="icon coupon"></text>
+    <text class="title">费用查询</text>
+  </view>
+</view>
+<form class="search-form">
+  <view class="search-goods">
+    <input type="text" placeholder="请输入您要搜索的药品"/>
+  </view>
+  <view class="btn-area">
+    <button formType="submit">
+    <image src="/image/find_green_search_128px_5373_easyicon.net.png" style="width:70rpx;height:70rpx"></image>
+    </button>
+  </view>
+</form>
+<view class="top-cate">
+  <block wx:for="{{topPicData}}" >
+    <navigator class="cate-item">
+     <image src="{{item.pic}}" mode="aspectFit"></image>
+    </navigator>
+  </block>
+</view>
+<view class="main-cate">
+  <block wx:for="{{mainPicData}}" >
+  <view class="each-item-wrapper">
+    <view class="each-header clearfix">
+      <text class="title">{{item.cname}}</text>
+      <!-- <navigator>
+       <text class="more">更多</text>
+      </navigator> -->
+    </view>
+    <!-- <view class="cate-wrapper">
+    <block wx:for="{{item.cates}}" >
+      <view class="each-cate">
+        <navigator>
+          <image src="{{item.pic}}"></image>
+        </navigator>
+      </view>
+      </block>
+    </view> -->
+<view class="goods-wrapper">
+    <!--index.wxml-->
+<navigator wx:for="{{item.goods}}" url="../movie/movie" >
+             <view class="item-desc-container">
+                <image class="item-img" src="{{item.pic}}"></image>
+                <view class="info-view">
+                  <text style="font-size:35rpx;color:#666">{{item.title}}</text>
+                  <view class="content"></view>
+                  <view class="item-footer">
+                    <view class="item-footer-author">
+                      <image src="/image/icon_component_HL.png" class="avatar"></image>
+                      <text>{{item.name}}</text>
+                    </view>
+                    <view class="item-footer-view">
+                      <image src="/image/eye_128px_557786_easyicon.net.png" class="view"></image>
+                      <text>{{item.view}}</text>
+                    </view>
+                  </view>
+                </view>
+             </view>
+           </navigator>
+     
+     
+    </view>
+    </view>
+  </block>
+</view>
+
+
+
+
+

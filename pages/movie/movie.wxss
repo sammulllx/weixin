@@ -1,0 +1,57 @@
+.meta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 1000rpx;
+  padding: 50rpx 40rpx;
+}
+
+.poster {
+  width: 80%;
+  height: 80%;
+  margin: 20rpx;
+  box-shadow: 10px 10px 15px grey;
+
+}
+
+.title {
+  font-style: 42rpx;
+  color: #444;
+}
+
+.info {
+  font-size: 18rpx;
+  color: #888;
+  margin-top: 20rpx;
+  width: 80%;
+}
+
+.summary {
+  width: 80%;
+  margin: 30rpx auto;
+}
+
+.label {
+  display: block;
+}
+
+.content {
+  color: #666;
+  font-size: 20rpx;
+  padding: 10rpx
+}
+.userinfo{
+  width:100%;
+  
+  background: rgb(238, 245, 229);
+  background-size: cover;
+  /*层叠布局*/
+  z-index: 0;
+  /*相对位置，这样其他view就能用绝对位置覆盖上去*/
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  
+  height: 100%;
+  
+}

@@ -1,0 +1,72 @@
+
+
+  
+<!-- <view>
+        
+            <block wx:for="{{grids}}" wx:key="*this">
+                <navigator url="" class="weui-grid" hover-class="weui-grid_active">
+                    <image class="weui-grid__icon" src="{{baseurl}}" />
+                    <view class="weui-grid__label">Grid</view>
+                </navigator>
+            </block>
+      
+</view> -->
+<view>
+        <view class="weui-search-bar">
+            <view class="weui-search-bar__form">
+                <view class="weui-search-bar__box">
+                    <icon class="weui-icon-search_in-box" type="search" size="14"></icon>
+                    <input type="text" class="weui-search-bar__input" placeholder="搜索" value="{{inputVal}}" focus="{{inputShowed}}" bindinput="inputTyping" />
+                    <view class="weui-icon-clear" wx:if="{{inputVal.length > 0}}" bindtap="clearInput">
+                        <icon type="clear" size="14"></icon>
+                    </view>
+                </view>
+                <label class="weui-search-bar__label" hidden="{{inputShowed}}" bindtap="showInput">
+                    <icon class="weui-icon-search" type="search" size="14"></icon>
+                    <view class="weui-search-bar__text">搜索基地</view>
+                </label>
+            </view>
+            <view class="weui-search-bar__cancel-btn" hidden="{{!inputShowed}}" bindtap="hideInput">取消</view>
+        </view>
+        <view class="weui-cells searchbar-result" wx:if="{{inputVal.length > 0}}">
+            <navigator url="" class="weui-cell" hover-class="weui-cell_active">
+                <view class="weui-cell__bd">
+                    <view>广东美华农业生物科技有限公司化橘红监测基地</view>
+                </view>
+            </navigator>
+            <navigator url="" class="weui-cell" hover-class="weui-cell_active">
+                <view class="weui-cell__bd">
+                    <view>恩平市中南沉香基地</view>
+                </view>
+            </navigator>
+            <navigator url="" class="weui-cell" hover-class="weui-cell_active">
+                <view class="weui-cell__bd">
+                    <view>清远人参基地</view>
+                </view>
+            </navigator>
+            <navigator url="" class="weui-cell" hover-class="weui-cell_active">
+                <view class="weui-cell__bd">
+                    <view>茂名化橘红基地</view>
+                </view>
+            </navigator>
+        </view>
+   
+</view>
+
+<navigator url = "/pages/base-detail/index" open-type="redirect" wx:for="{{goods}}"> 	<!-- 问号后面是参数 -->
+		<view class="item">
+			<image class="poster" src="{{item.pic}}"></image>
+			<view class="meta">
+				<text class="title">{{item.firm}}</text>
+				<text class="sub-title">{{item.title}}</text>
+				<text class="artists">{{item.name}}</text>
+			</view>
+		   <image class="gotobase" catchtap="gotobase" src="/image/gotobase.png" ></image> 			
+		</view>
+	</navigator>
+<!-- <view class="box">
+  <ec-canvas id="mychart-dom-line1" canvas-id="mychart-line1" ec="{{ ecline1 }}"></ec-canvas>
+  <ec-canvas id="mychart-dom-line2" canvas-id="mychart-line2" ec="{{ ecline2 }}"></ec-canvas>
+  <ec-canvas id="mychart-dom-line3" canvas-id="mychart-line3" ec="{{ ecline3 }}"></ec-canvas>
+  <ec-canvas id="mychart-dom-line4" canvas-id="mychart-line4" ec="{{ ecline4 }}"></ec-canvas>
+</view> -->
