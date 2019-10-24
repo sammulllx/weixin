@@ -1,7 +1,8 @@
 {
   "pages": [
-    "pages/blank/blank",
     "pages/index/index",
+    "pages/blank/blank",
+    
     "pages/movie/movie",
     
     
