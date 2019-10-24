@@ -475,9 +475,9 @@ Page({
 	  
   },
   call: function (e) {
-    var phone = e.currentTarget.dataset.phone;
+    
     wx.makePhoneCall({
-      phoneNumber: phone+""
+      phoneNumber: '13702381330'
     });
   },
   gotobase : function(){

@@ -53,7 +53,7 @@
    
 </view>
 
-<navigator url = "/pages/base-detail/index" open-type="redirect" wx:for="{{goods}}"> 	<!-- 问号后面是参数 -->
+<navigator url = "/pages/base-detail/index"  wx:for="{{goods}}"> 	<!-- 问号后面是参数 -->
 		<view class="item">
 			<image class="poster" src="{{item.pic}}"></image>
 			<view class="meta">
