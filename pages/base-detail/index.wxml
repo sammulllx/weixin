@@ -44,21 +44,53 @@ markers="{{markers}}"
 		  </navigator> -->
 		</view>
 
-<view class="box">
+<view class="out-detail-chart">
+<view class="detail-chart">	
+	<text style="border-left:10rpx solid #90ed7d ;padding-left: 20rpx;" >看我左边</text>
+	<canvas canvas-id="pieCanvas" disable-scroll="true" class="pieCanvas"></canvas>	
+</view>
+<view class= "graybar"></view>
+<view class="detail-chart">
+	
+	<text style="border-left:10rpx solid #90ed7d ;padding-left: 20rpx;">看我左边</text>
+	<canvas canvas-id="ringCanvas" disable-scroll="true" class="pieCanvas"></canvas>
+	
+</view>
+<view class= "graybar"></view>
 
-  <!-- <view class="box"> -->
-  <ec-canvas id="mychart-dom-line1" canvas-id="mychart-line1" ec="{{ ecline1 }}"></ec-canvas>
-  <!-- <ec-canvas id="mychart-dom-line2" canvas-id="mychart-line2" ec="{{ ecline2 }}"></ec-canvas> -->
-  <ec-canvas id="mychart-dom-line3" canvas-id="mychart-line3" ec="{{ ecline3 }}"></ec-canvas>
-  <ec-canvas id="mychart-dom-line4" canvas-id="mychart-line4" ec="{{ ecline4 }}"></ec-canvas>
-   <ec-canvas id="mychart-dom-line5" canvas-id="mychart-line5" ec="{{ ecline5 }}"></ec-canvas>
- 
- 
-<!-- </view> -->
+ <view class="detail-chart">	
+	<text style="border-left:10rpx solid #90ed7d ;padding-left: 20rpx;">看我左边</text>
+	<canvas canvas-id="lineCanvas" disable-scroll="true" class="pieCanvas"></canvas>
+	
+</view>
+<view class= "graybar"></view>
+
+
+<view class="detail-chart">	
+	<text style="border-left:10rpx solid #90ed7d ;padding-left: 20rpx;">看我左边</text>
+	<canvas canvas-id="columnCanvas" disable-scroll="true" class="pieCanvas medium-pieCanvas"></canvas>
+	
+</view>
+<view class= "graybar"></view>
+
+<view class="detail-chart">	
+	<text style="border-left:10rpx solid #90ed7d ;padding-left: 20rpx;">看我左边</text>
+<canvas canvas-id="areaCanvas" disable-scroll="true" class="pieCanvas medium-pieCanvas"></canvas>
+	
+</view>
+<view class= "graybar"></view>
+
+<view class="detail-chart">	
+	<text style="border-left:10rpx solid #90ed7d ;padding-left: 20rpx;">看我左边</text>
+	<canvas canvas-id="radarCanvas" disable-scroll="true" class="pieCanvas small-pieCanvas" ></canvas>
+	
+</view>
+<view class= "graybar"></view>
+
 
 </view>
 
-	
+
 		
 		
 		

@@ -1,22 +1,23 @@
 {
   "pages": [
-    "pages/index/index",
-    "pages/blank/blank",
-    
     "pages/movie/movie",
+	  "pages/index/index",
+	 
+	 
+    
+   
     
     
-	  
-    
-    
+	 "pages/users/users",
+   
+	 "pages/scan/scan",
     "pages/base-detail/index",
-    
-    
+    "pages/blank/blank",
+   
     "pages/logs/logs",
-    
-    "pages/my/myIndex",
-    "pages/users/users"
-    
+    "pages/my/myIndex"
+   
+   
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -28,6 +29,7 @@
   "tabBar": {
     "selectedColor": "#000065",
     "borderStyle": "white",
+    "backgroundColor":"#8BC34A",
     "list": [
       {
         "pagePath": "pages/index/index",

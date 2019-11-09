@@ -2,25 +2,24 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 1000rpx;
   padding: 50rpx 40rpx;
 }
 
 .poster {
-  width: 80%;
-  height: 80%;
+
   margin: 20rpx;
-  box-shadow: 10px 10px 15px grey;
+  box-shadow: 0px 0px 15px grey;
+  border-radius: 25rpx;
 
 }
 
 .title {
-  font-style: 42rpx;
+  font-size: 42rpx;
   color: #444;
 }
 
 .info {
-  font-size: 18rpx;
+  font-size: 25rpx;
   color: #888;
   margin-top: 20rpx;
   width: 80%;
@@ -28,30 +27,126 @@
 
 .summary {
   width: 80%;
-  margin: 30rpx auto;
+ margin: 0rpx auto;
 }
 
 .label {
   display: block;
+  color: #666;
+  font-size: 32rpx;
 }
 
 .content {
   color: #666;
-  font-size: 20rpx;
-  padding: 10rpx
+  font-size: 25rpx;
+ 
 }
 .userinfo{
   width:100%;
-  
-  background: rgb(238, 245, 229);
+
+  /* background: rgb(238, 245, 229); */
   background-size: cover;
   /*层叠布局*/
   z-index: 0;
   /*相对位置，这样其他view就能用绝对位置覆盖上去*/
-  position: absolute;
+  /* position: absolute; */
   display: flex;
   flex-direction: column;
   
   height: 100%;
   
+}
+.greenbar {
+  height: 80rpx;
+  line-height: 80rpx;
+  /* background: linear-gradient(#336405, rgb(15, 170, 111)); */
+  background: #8BC34A;
+  color: #fff;
+  padding-left: 16rpx;
+  border-radius: 30rpx;
+  box-shadow: 5px 5px 15px grey;
+  margin-bottom: 5rpx;
+  margin-top: 5rpx;
+}
+.greenbar .title {
+  display: block;
+  color: #fff;
+  font-weight: 700;
+  font-size: 30rpx;
+}
+.box {
+	width:100%;
+	height:100%;
+	position: relative;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+    z-index:99;
+} 
+.pieCanvas {
+   align-items: center; 
+   height: 600rpx;
+    transform: scale(1);
+    position: relative;
+    margin: 0 auto;
+	margin-top: 30rpx;
+	margin-bottom: 30rpx;
+}
+.home-swiper {
+  width: 100%;
+  height: 324rpx;
+}
+.slide-image {
+  width: 100%;
+  height: 324rpx;
+}
+.small-pieCanvas{
+	height:500rpx;
+}
+.medium-pieCanvas
+{
+	height: 600rpx;
+}
+.flow
+{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	/* background-color: rgb(238, 245, 229); */
+}
+.flow-item{
+	align-items: left;
+	margin: 20rpx;
+	box-shadow: 10px 10px 15px grey;
+	border-radius: 25rpx;
+	display: flex;
+	flex-direction: column;
+	float: left;
+	background: url(http://hbimg.b0.upaiyun.com/da3bac30570303d68bf906d9ce4245c58c29768d152dd-kmyhVx_fw658)no-repeat; 
+	width:50%;
+}
+.flow-arrow
+{
+	
+}
+.greenbar-out{
+	background-color: rgb(238, 245, 229);
+}
+.graybar{
+	background: #fbf8fb;
+	width: 100%;
+	height: 8rpx;
+}
+.detail-chart{
+	margin-bottom: auto;
+	margin-top: 50rpx;
+	
+	
+}
+.out-detail-chart{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	
 }

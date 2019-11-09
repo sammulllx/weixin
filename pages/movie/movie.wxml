@@ -1,15 +1,172 @@
+
 <view class= "userinfo">
-<!-- <scroll-view scroll-y="true"> -->
+
   <view class="meta">
-    <image class="poster" src="https://gss0.bdstatic.com/94o3dSag_xI4khGkpoWK1HF6hhy/baike/c0%3Dbaike150%2C5%2C5%2C150%2C50/sign=48de929ab2315c60579863bdecd8a076/c83d70cf3bc79f3d50fcdabfb4a1cd11728b291b.jpg" background-size="cover"></image>
-    <text class="title">{{movie.name}}</text>
-    <text class="info">别称：{{movie.oname}}</text>
-    <text class="info">学名:{{movie.sname}}</text>
-    <text class="info">产地：{{movie.where}}</text>
+    <image class="poster" src="http://image.zysuyuan.cn:8031/{{movie.img_path}}" background-size="cover"></image>
+    <text class="title">{{movie.m_name}}</text>
+    
+    <text class="info">基源名称:{{movie.m_origin_name}}</text>
+    <text class="info">基源简介：{{movie.m_origin_interview}}</text>
+	<text class="info">基源拉丁名称：{{movie.m_latin_name}}</text>
   </view>
   <view class="summary">
-    <text class="label">简介：</text>
-    <text class="content">{{movie.summary}}</text>
+    <text class="label">药材简介：</text>
+    <text class="content">{{movie.m_remarks}}</text>
   </view>
 <!-- </scroll-view> -->
 </view>
+
+	<view class="greenbar">
+		  <text class="title">溯源图谱</text>
+		  
+	</view>
+
+
+<view class="flow">
+            
+                <navigator url="../blank/blank" class="flow-item">
+                    <image class="weui-grid__icon" src="../../image/farm_221px_1219376_easyicon.net.png" />
+                    <view class="weui-grid__label">生产地：清远龙潭种植区</view>
+					<view class="weui-grid__label">负责人：李晓玲</view>
+					<view class="weui-grid__label">电话：38769765445</view>
+					
+                </navigator>
+				<view url="" class="flow-arrow">
+				    <image class="weui-grid__icon" src="../../image/arrow_bottom_5t.png" />
+				    
+					
+				</view>
+				
+				<navigator url="../blank/blank" class="flow-item">
+				    <image class="weui-grid__icon" src="../../image/sewing_machine_541px_1231353_easyicon.net.png" />
+				    <view class="weui-grid__label">加工厂：腾达有限公司</view>
+					<view class="weui-grid__label">负责人：王美华</view>
+					<view class="weui-grid__label">电话：28475487664</view>
+					
+				</navigator>
+				<view url="" class="flow-arrow">
+				    <image class="weui-grid__icon" src="../../image/arrow_bottom_5t.png" />
+				    
+					
+				</view>
+							
+				<navigator url="../blank/blank" class="flow-item">
+				    <image class="weui-grid__icon" src="../../image/cargo_truck_625px_1235848_easyicon.net.png" />
+				    <view class="weui-grid__label">物流公司：顺辉物流</view>
+					<view class="weui-grid__label">负责人：郑四</view>
+					<view class="weui-grid__label">电话：32383827112</view>
+					
+				</navigator>
+				<view url="" class="flow-arrow">
+				    <image class="weui-grid__icon" src="../../image/arrow_bottom_5t.png" />
+				    
+					
+				</view>
+				<navigator url="../blank/blank" class="flow-item">
+				    <image class="weui-grid__icon" src="../../image/shop_776px_1230863_easyicon.net.png" />
+				    <view class="weui-grid__label">销售点：顺辉物流</view>
+					<view class="weui-grid__label">负责人：王富贵</view>
+					<view class="weui-grid__label">电话：32383127112</view>
+					
+				</navigator>
+            
+</view>
+
+	<view class="greenbar">
+		  <text class="title">种植基地图片</text>
+		  
+	
+</view>
+<swiper class="home-swiper" indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="{{circular}}">
+  <block wx:for="{{imgUrls}}" >
+    <swiper-item>
+    <navigator>
+      <image src="{{item}}" class="slide-image"/>
+      </navigator>
+    </swiper-item>
+  </block>
+</swiper>
+<view class="weui-cells weui-cells_after-title">
+            <view class="weui-cell weui-cell_example back"  bindtap="gotobase">
+                <view class="weui-cell__hd">
+                    <image src="/image/location_783px_1234896_easyicon.net.png" style="margin-right: 16px;vertical-align: middle;width:20px; height: 20px;"></image>
+                </view>
+                <view class="weui-cell__bd">地址</view>
+                <view class="weui-cell__ft">清远龙潭种植区</view>
+            </view>
+            <navigator bindtap="call" class="weui-cell weui-cell_example back">
+                <view class="weui-cell__hd">
+                    <image src="/image/whatsapp_607px_1229084_easyicon.net.png" style="margin-right: 16px;vertical-align: middle;width:20px; height: 20px;"></image>
+                </view>
+                <view class="weui-cell__bd">电话</view>
+                <view class="weui-cell__ft">18476026398</view>
+            </navigator>
+        </view>
+       
+		<view class="greenbar">
+		  <text class="title">种植基地详情</text>
+		</view>
+<view class="out-detail-chart">
+<!-- <view class="detail-chart">	
+	<text style="border-left:10rpx solid #90ed7d ;padding-left: 20rpx;" >看我左边</text>
+	<canvas canvas-id="pieCanvas" disable-scroll="true" class="pieCanvas"></canvas>	
+</view>
+<view class= "graybar"></view>
+<view class="detail-chart">
+	
+	<text style="border-left:10rpx solid #90ed7d ;padding-left: 20rpx;">看我左边</text>
+	<canvas canvas-id="ringCanvas" disable-scroll="true" class="pieCanvas"></canvas>
+	
+</view>
+<view class= "graybar"></view> -->
+
+ <view class="detail-chart">	
+	<text style="border-left:10rpx solid #90ed7d ;padding-left: 20rpx;">光照强度</text>
+	<canvas canvas-id="lineCanvas" disable-scroll="true" class="pieCanvas"></canvas>
+	
+</view>
+<view class= "graybar"></view>
+
+
+<view class="detail-chart">	
+	<text style="border-left:10rpx solid #90ed7d ;padding-left: 20rpx;">平均湿度</text>
+	<canvas canvas-id="areaCanvas2" disable-scroll="true" class="pieCanvas medium-pieCanvas"></canvas>
+	
+</view>
+<view class= "graybar"></view>
+
+<view class="detail-chart">	
+	<text style="border-left:10rpx solid #90ed7d ;padding-left: 20rpx;">平均温度</text>
+<canvas canvas-id="areaCanvas1" disable-scroll="true" class="pieCanvas medium-pieCanvas"></canvas>
+	
+</view>
+<view class= "graybar"></view>
+
+<view class="detail-chart">	
+	<text style="border-left:10rpx solid #90ed7d ;padding-left: 20rpx;">土壤ph值</text>
+	<canvas canvas-id="radarCanvas" disable-scroll="true" class="pieCanvas small-pieCanvas" ></canvas>
+	
+</view>
+<view class= "graybar"></view>
+
+
+</view>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   

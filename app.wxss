@@ -7,3 +7,7 @@
   visibility: hidden;
   clear: both;
 }
+text {
+  /* font-family: 'KaiTi'; */
+  font-family: 'cursive'
+}

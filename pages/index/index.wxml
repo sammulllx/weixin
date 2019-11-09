@@ -3,7 +3,7 @@
   autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="{{circular}}">
   <block wx:for="{{imgUrls}}" >
     <swiper-item>
-    <navigator>
+    <navigator url="/pages/blank/blank">
       <image src="{{item}}" class="slide-image"/>
       </navigator>
     </swiper-item>
@@ -27,19 +27,19 @@
     <text class="title">费用查询</text>
   </view>
 </view>
-<form class="search-form">
+<view class="search-form">
   <view class="search-goods">
-    <input type="text" placeholder="请输入您要搜索的药品"/>
+    <input  class='input' confirm-type="search" bindinput='wxSearchInput'  bindconfirm='wxSearchFn' bindfocus="wxSerchFocus" bindblur="wxSearchBlur" placeholder='请输入搜索内容'/>
   </view>
   <view class="btn-area">
-    <button formType="submit">
-    <image src="/image/find_green_search_128px_5373_easyicon.net.png" style="width:70rpx;height:70rpx"></image>
+    <button formType="submit" bindtap="wxSearchFn" hover-class='button-hover'>
+   <image src="/image/find_green_search_128px_5373_easyicon.net.png" style="width:70rpx;height:70rpx"></image>
     </button>
   </view>
-</form>
+</view>
 <view class="top-cate">
   <block wx:for="{{topPicData}}" >
-    <navigator class="cate-item">
+    <navigator class="cate-item" url="/pages/blank/blank">
      <image src="{{item.pic}}" mode="aspectFit"></image>
     </navigator>
   </block>
@@ -49,22 +49,11 @@
   <view class="each-item-wrapper">
     <view class="each-header clearfix">
       <text class="title">{{item.cname}}</text>
-      <!-- <navigator>
-       <text class="more">更多</text>
-      </navigator> -->
     </view>
-    <!-- <view class="cate-wrapper">
-    <block wx:for="{{item.cates}}" >
-      <view class="each-cate">
-        <navigator>
-          <image src="{{item.pic}}"></image>
-        </navigator>
-      </view>
-      </block>
-    </view> -->
+    
 <view class="goods-wrapper">
     <!--index.wxml-->
-<navigator wx:for="{{item.goods}}" url="../movie/movie" >
+<!-- <navigator wx:for="{{item.goods}}" url="../movie/movie" >
              <view class="item-desc-container">
                 <image class="item-img" src="{{item.pic}}"></image>
                 <view class="info-view">
@@ -82,14 +71,33 @@
                   </view>
                 </view>
              </view>
-           </navigator>
-     
-     
+  </navigator> -->  
+  
+  <navigator wx:for="{{movies}}" url="../movie/movie?m_name={{item.m_name}}" >
+               <view class="item-desc-container">
+                  <image class="item-img" src="http://image.zysuyuan.cn:8031/{{item.img_path}}"></image>
+                  <view class="info-view">
+                    <text style="font-size:35rpx;color:#666">{{item.m_name}}</text>
+                    <view class="content"></view>
+                    <view class="item-footer">
+                      <view class="item-footer-author">
+                        <image src="/image/icon_component_HL.png" class="avatar"></image>
+                        <text>{{item.m_method}}</text>
+                      </view>
+                      <view class="item-footer-view">
+                        <image src="/image/eye_128px_557786_easyicon.net.png" class="view"></image>
+                        <text>342</text>
+                      </view>
+                    </view>
+                  </view>
+               </view>
+    </navigator>  
+  
     </view>
     </view>
   </block>
+  
 </view>
-
 
 
 

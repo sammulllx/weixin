@@ -1,7 +1,7 @@
 //logs.js
 
 var util = require('../../utils/util.js')
-import * as echarts from '../../ec-canvas/echarts';
+
 
 let chart = null;
 

@@ -5,22 +5,22 @@ Page({
       {
         imageUrl: "../images/history.png",
         text: "我的足迹",
-        url: "../entrance/entrance"
+        url: "../blank/blank"
       },
       {
         imageUrl: "../images/focus.png",
         text: "我的关注",
-        url: "../entrance/entrance"
+        url: "../blank/blank"
       },
       {
         imageUrl: "../images/help.png",
         text: "帮助",
-        url: "../entrance/entrance"
+        url: "../blank/blank"
       },
       {
         imageUrl: "../images/feedback.png",
         text: "反馈",
-        url: "../entrance/entrance"
+        url: "../blank/blank"
       }
     ]
   },

@@ -1,5 +1,12 @@
 .back{
-	background: rgb(238, 245, 229);
+	/* background: rgb(238, 245, 229); */
+}
+.pieCanvas {
+    align-items: center;
+    height: 600rpx;
+    transform: scale(1);
+  
+    margin: 0 auto;
 }
 .home-swiper {
   width: 100%;
@@ -32,10 +39,52 @@
 	bottom: 0;
 	left: 0;
 	right: 0;
-  z-index:99;
+    z-index:99;
 } 
 page{
   height: 100%;
   width: 100%;
-  background: rgb(238, 245, 229);
+  /* background: rgb(238, 245, 229); */
 }
+.flow
+{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	/* background-color: rgb(238, 245, 229); */
+}
+.flow-item{
+	align-items: left;
+	margin: 20rpx;
+	box-shadow: 10px 10px 15px grey;
+	border-radius: 25rpx;
+	display: flex;
+	flex-direction: column;
+	float: left;
+	background: url(http://hbimg.b0.upaiyun.com/da3bac30570303d68bf906d9ce4245c58c29768d152dd-kmyhVx_fw658)no-repeat; 
+	width:50%;
+}
+.flow-arrow
+{
+	
+}
+.greenbar-out{
+	background-color: rgb(238, 245, 229);
+}
+.graybar{
+	background: #fbf8fb;
+	width: 100%;
+	height: 8rpx;
+}
+.detail-chart{
+	margin-bottom: auto;
+	margin-top: 50rpx;
+	
+	
+}
+.out-detail-chart{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	}
+	
